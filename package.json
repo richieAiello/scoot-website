@@ -1,0 +1,26 @@
+{
+  "name": "scoot-website",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Scoot website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/scoot-multipage-website-N76alNPRJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "source": "./src/html/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richieAiello/scoot-website.git"
+  },
+  "keywords": [],
+  "author": "Richard Aiello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richieAiello/scoot-website/issues"
+  },
+  "homepage": "https://github.com/richieAiello/scoot-website#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "sass": "^1.52.1"
+  }
+}
