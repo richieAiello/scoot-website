@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.parcel-cache/
+*.xd
+*.fig
+.DS_Store
