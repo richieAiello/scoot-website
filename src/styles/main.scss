@@ -294,6 +294,58 @@ $black: #000000;
 /**************************************
   FOOTER
 **************************************/
+.footer {
+  background-color: $dark-grey;
+  text-align: center;
+  padding: 4rem 0 5.5rem;
+
+  .logo {
+    margin-bottom: 2.625rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 5.3125rem;
+  }
+
+  &__item {
+    color: $grey;
+    &:nth-of-type(2) {
+      margin: 1rem 0;
+    }
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: $yellow;
+    }
+  }
+
+  &__icon-link {
+    &:nth-of-type(2) {
+      margin: 0 1.5rem;
+    }
+
+    &:hover,
+    &:focus {
+      .footer__icon {
+        fill: $light-grey;
+      }
+    }
+  }
+
+  &__icon {
+    transition: all 400ms;
+  }
+}
+
 /**************************************
   BUTTONS
 **************************************/
