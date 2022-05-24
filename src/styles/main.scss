@@ -5,9 +5,11 @@ $yellow: #fcb72b;
 $light-yellow: #fff4df;
 $navy: #495567;
 $grey: #939caa;
+$dark-grey: #333a44;
 $light-grey: #e5ecf4;
 $snow: #f2f5f9;
 $white: #ffffff;
+$black: #000000;
 
 /**************************************
   RESET AND SCROLLBAR
@@ -19,6 +21,7 @@ $white: #ffffff;
   padding: 0;
   margin: 0;
 }
+
 /**************************************
   BASE STYLES
 **************************************/
@@ -36,16 +39,22 @@ $white: #ffffff;
   margin-inline: auto;
 }
 
+.btn,
+.link {
+  color: inherit;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  transition: all 400ms;
+}
+
 .btn {
   display: inline-block;
   border: initial;
   background-color: initial;
-  color: inherit;
 }
 
 .link {
   text-decoration: none;
-  color: inherit;
 }
 
 .invisible {
@@ -72,20 +81,59 @@ $white: #ffffff;
   background-color: $white;
   position: fixed;
   top: 0;
-  z-index: 2;
   
   &__wrapper {
     display: flex;
     align-items: center;
     height: 100%;
   }
-}
 
-.logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
+  .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  }
+
+  &__menu,
+  &__shadow {
+    height: calc(100vh - 4rem);
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+
+  &__menu {
+    width: min(100%, 256px);
+    padding: 4rem 2rem 0 2rem;
+    background-color: $dark-grey;
+    color: $white;
+    z-index: 1;
+  }
+
+  &__shadow {
+    width: 100%;
+    background-color: rgba($black, 74.73%);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.125rem;
+
+    &:nth-of-type(2) {
+      margin: 1.5rem 0;
+    }
+  }
+  
+  &__link {
+    &:hover,
+    &:focus {
+      color: $yellow;
+    }
+  }
 }
 
 // Absolutely positioned to btn--hamburger.
@@ -119,12 +167,14 @@ $white: #ffffff;
   bottom: 7px;
   transform: rotate(-315deg);
 }
+
 /**************************************
   HEADER
 **************************************/
 .hero {
   margin-top: 4rem;
 }
+
 /**************************************
   MAIN
 **************************************/
@@ -149,9 +199,22 @@ $white: #ffffff;
   }
 
   &--nav {
+    width: 192px;
+    text-align: center;
+    background-color: $yellow;
+    border: 3px solid $yellow;
+    padding: 0.6875rem 0;
+    position: absolute;
+    bottom: 1.5rem;
 
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $yellow;
+    }
   }
 }
+
 /**************************************
   IMAGES
 **************************************/
@@ -159,6 +222,7 @@ $white: #ffffff;
   max-width: 100%;
   object-fit: cover;
 }
+
 /**************************************
   PATTERNS
 **************************************/
