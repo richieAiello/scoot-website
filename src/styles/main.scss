@@ -186,7 +186,8 @@ $black: #000000;
   text-align: center;
 
   &__context {
-    padding: 7.1875rem 0 11.1875rem;
+    padding-top: 7.1875rem;
+    max-width: 34ch;
   }
 
   &__heading {
@@ -276,7 +277,19 @@ $black: #000000;
 }
 
 .sign-up {
+  background-color: $navy;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 
+  &__context {
+    padding: 5.5rem 0;
+  }
+
+  &__heading {
+    color: $white;
+    margin-bottom: 2.5rem;
+  }
 }
 /**************************************
   FOOTER
@@ -373,5 +386,13 @@ $black: #000000;
 
   &--secondary {
     display: none;
+  }
+
+  &--sign-up {
+    opacity: 10%;
+    height: 347px;
+    position: absolute;
+    bottom: -173px;
+    right: -225px;
   }
 }
