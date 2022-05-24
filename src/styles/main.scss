@@ -249,7 +249,30 @@ $black: #000000;
 }
 
 .information {
+  text-align: center;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7.5rem;
+  }
+
+  &__context,
+  &__context--secondary {
+    order: 2;
+    margin-top: 3.5rem;
+  }
+
+  &__heading {
+    color: $navy;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    max-width: 60ch;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
 }
 
 .sign-up {
@@ -308,6 +331,19 @@ $black: #000000;
       color: $yellow;
     }
   }
+
+  &--information {
+    color: $white;
+    background-color: $yellow;
+    border: 3px solid $yellow;
+    padding: 0.6875rem 2.53125rem 0.6875rem 2.78125rem;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $yellow;
+    }
+  }
 }
 
 /**************************************
@@ -316,6 +352,13 @@ $black: #000000;
 .image {
   max-width: 100%;
   object-fit: cover;
+
+  &--information {
+    height: 311px;
+    width: 311px;
+    border-radius: 100vw;
+    margin-inline: auto;
+  }
 }
 
 /**************************************
