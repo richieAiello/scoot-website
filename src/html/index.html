@@ -17,39 +17,37 @@
 </head>
 <body class="body">
   <nav class="nav">
-    <img src="../assets/logo.svg" alt="Scoot company logo.">
-
-    <!-- Hidden on tablet and desktop  -->
-    <button type="button" aria-label="Open and close navigation menu." class="btn btn--hamburger">
-      <span class="hamburger hamburger--top"></span>
-      <span class="hamburger hamburger--bottom"></span>
-    </button>
-
-    <!-- Revealed with hamburger button on mobile. Displayed on tablet and desktop. -->
-    <div class="nav__menu hidden">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="./about.html" class="nav__link link">About</a>
-        </li>
-        <li class="nav__item">
-          <a href="./locations.html" class="nav__link link">Location</a>
-        </li>
-        <li class="nav__item">
-          <a href="./careers.html" class="nav__link link">Careers</a>
-        </li>
-      </ul>
-
-      <a href="#" class="btn btn--nav link">
-        Get Scootin
-      </a>
+    <div class="nav__wrapper container">
+      <img src="../assets/logo.svg" alt="Scoot company logo." class="logo">
+      <!-- Hidden on tablet and desktop  -->
+      <button type="button" aria-label="Open and close navigation menu." class="btn btn--hamburger">
+        <span class="hamburger hamburger--top"></span>
+        <span class="hamburger hamburger--bottom"></span>
+      </button>
+      <!-- Revealed with hamburger button on mobile. Displayed on tablet and desktop. -->
+      <div class="nav__menu hidden">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="./locations.html" class="nav__link link">Location</a>
+          </li>
+          <li class="nav__item">
+            <a href="./careers.html" class="nav__link link">Careers</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--nav link">
+          Get Scootin
+        </a>
+      </div>
+      <!-- Page overlay revealed with hamburger button on mobile. Removed for tablet and desktop. -->
+      <div class="nav__shadow hidden"></div>
     </div>
-
-    <!-- Page overlay revealed with hamburger button on mobile. Removed for tablet and desktop. -->
-    <div class="nav__shadow hidden"></div>
   </nav>
   <header class="hero">
     <div class="hero__context container">
-      <h1 class="hero__heading">
+      <h1 class="hero__heading heading">
         <span class="block">Scooter sharing</span>
         made simple
       </h1>
@@ -78,24 +76,24 @@
        <div class="locate__context container ">
          <div class="locate__wrapper">
           <img src="../assets/icons/locate.svg" alt="" class="locate__icon">
-           <h3 class="main__sub-heading">Locate with app</h3>
-           <p class="main__text">
+           <h3 class="locate__heading heading">Locate with app</h3>
+           <p class="locate__text main__text">
             Use the app to find the nearest scooter to you. We are continuously placing scooters 
             in the areas with most demand, so one should never be too far away.
            </p>
          </div>
          <div class="locate__wrapper">
            <img src="../assets/icons/scooter.svg" alt="" class="locate__icon">
-           <h3 class="main__sub-heading">Pick your scooter</h3>
-           <p class="main__text">
+           <h3 class="locate__heading heading">Pick your scooter</h3>
+           <p class="locate__text main__text">
             We show the most important info for the scooters closest to you. So you know how much 
             charge they have left and can see roughly how much it will cost.
            </p>
          </div>
          <div class="locate__wrapper">
            <img src="../assets/icons/ride.svg" alt="" class="locate__icon">
-           <h3 class="main__sub-heading">Enjoy the ride</h3>
-           <p class="main__text">
+           <h3 class="locate__heading heading">Enjoy the ride</h3>
+           <p class="locate__text main__text">
             Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, 
             and you’re off! Always lock bikes away from walkways and accessibility ramps.
            </p>
@@ -105,10 +103,10 @@
     <section class="information container">
       <div class="information__wrapper">
         <div class="information__context">
-          <h2 class="main__heading">
+          <h2 class="information__heading main__heading heading">
             Easy to use riding telemetry
           </h2>
-          <p class="main__text">
+          <p class="information__text main__text">
             The Scoot app is available with riding telemetry. This means it can show you your 
             average speed, how long you've been using the scooter, your traveling distance, 
             and many more things all in an easy to use app.
@@ -134,10 +132,10 @@
       </div>
       <div class="information__wrapper">
         <div class="information__context--secondary ">
-          <h2 class="main__heading">
+          <h2 class="information__heading main__heading heading">
             Coming to a city near you
           </h2>
-          <p class="main__text">
+          <p class="information__text main__text">
             Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure 
             to let us know if you want to see us in your hometown. We’re aiming to let our 
             scooters loose on 23 cities over the coming year.
@@ -163,10 +161,10 @@
       </div>
       <div class="information__wrapper">
         <div class="information__context">
-          <h2 class="main__heading">
+          <h2 class="information__heading main__heading heading">
             Zero hassle payments
           </h2>
-          <p class="main__text">
+          <p class="information__text main__text">
             Our payment is as easy as one two three. We accept most credit cards and debit cards. 
             You can also link your PayPal account inside the app. Need to pay later? No worries! 
             You can defer payment for up to a month.
@@ -192,24 +190,25 @@
       </div>
     </section>
     <section class="sign-up">
-       <div class="sign-up__context">
-        <h2 class="main__heading sign-up__heading">
+       <div class="sign-up__context container">
+        <h2 class="main__heading sign-up__heading heading">
         Sign up and Scoot off today
         </h2>
         <div class="sign-up__wrapper"> 
           <a href="#" class="btn btn--app-store" aria-label="Download the Scoot app from the app store.">
-            <img src="../assets/icons/app-store.svg" alt="">
+            <!-- Icon inserted via index.js. -->
           </a>
           <a href="#" class="btn btn--google-play" aria-label="Download the Scoot app from google play.">
-            <img src="../assets/icons/google-play.svg" alt="">
+            <!-- Icon inserted via index.js. -->
           </a>
         </div>
        </div>
+       <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--sign-up">
     </section>
   </main>
   <footer class="footer">
      <div class="footer__wrapper container">
-       <img src="../assets/logo.svg" alt="Scoot company logo.">
+       <img src="../assets/logo-white.svg" alt="Scoot company logo." class="logo">
        <ul class="footer__list">
         <li class="footer__item">
           <a href="./about.html" class="footer__link link">About</a>
@@ -222,7 +221,10 @@
         </li>
        </ul>
        <div class="footer__icons">
-         <!-- Inline svg icons inserted via index.js for styling and organization. -->
+         <!-- Inline svg icons inserted into links via index.js. -->
+         <a href="#" class="facebook footer__link--secondary link" aria-label="Visit the official Scoot facebook."></a>
+         <a href="#" class="twitter footer__link--secondary link" aria-label="Visit the official Scoot twitter."></a>
+         <a href="#" class="instagram footer__link--secondary link" aria-label="Visit the official Scoot instagram."></a>
        </div>
      </div>
   </footer>

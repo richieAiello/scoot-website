@@ -1,2 +1,465 @@
-// font-family: 'Lexend Deca', sans-serif;
+/**************************************
+  VARIABLES
+**************************************/
+$yellow: #fcb72b;
+$light-yellow: #fff4df;
+$navy: #495567;
+$grey: #939caa;
+$dark-grey: #333a44;
+$light-grey: #e5ecf4;
+$snow: #f2f5f9;
+$white: #ffffff;
+$black: #000000;
+
+/**************************************
+  RESET AND SCROLLBAR
+**************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/**************************************
+  BASE STYLES
+**************************************/
 // font-family: 'Space Mono', monospace;
+.body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  background-color: $white;
+}
+
+.container {
+  width: calc(100% - 4rem);
+  margin-inline: auto;
+}
+
+.heading {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+.btn,
+.link {
+  color: inherit;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  transition: all 400ms;
+}
+
+.btn {
+  display: inline-block;
+  border: initial;
+  background-color: initial;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+// Placed at the bottom of base styles to overwrite base styling of buttons.
+.hidden {
+  display: none; 
+}
+
+/**************************************
+  NAV
+**************************************/
+.nav {
+  height: 4rem;
+  width: 100%;
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  }
+
+  &__menu,
+  &__shadow {
+    height: calc(100vh - 4rem);
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+
+  &__menu {
+    width: min(100%, 256px);
+    padding: 4rem 2rem 0 2rem;
+    background-color: $dark-grey;
+    color: $white;
+    z-index: 2;
+  }
+
+  &__shadow {
+    width: 100%;
+    background-color: rgba($black, 74.73%);
+    z-index: 1;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.125rem;
+
+    &:nth-of-type(2) {
+      margin: 1.5rem 0;
+    }
+  }
+  
+  &__link {
+    &:hover,
+    &:focus {
+      color: $yellow;
+    }
+  }
+}
+
+// Absolutely positioned to btn--hamburger.
+// When toggling nav menu swap hamburger button to position fixed
+.hamburger {
+  background-color: $yellow;
+  width: 20px;
+  height: 2px;
+  border-radius: 1rem;
+  transition: all 500ms;
+  position: absolute;
+  left: 0;
+
+  &--top {
+    top: 3px;
+  }
+
+  &--bottom {
+    bottom: 3px;
+  }
+}
+
+// Toggled on click for .hamburger--top
+.flip-top {
+  top: 7px;
+  transform: rotate(-225deg);
+}
+
+// Toggled on click for .hamburger--bottom
+.flip-bottom {
+  bottom: 7px;
+  transform: rotate(-315deg);
+}
+
+/**************************************
+  HEADER
+**************************************/
+.hero {
+  height: 650px;
+  margin-top: 4rem;
+  background-image: url(../assets/images/home-hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $white;
+  text-align: center;
+
+  &__context {
+    padding-top: 7.1875rem;
+    max-width: 34ch;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -1.79px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    margin-bottom: 2.125rem;
+  }
+}
+
+/**************************************
+  MAIN
+**************************************/
+.main {
+  &__heading {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: -1.43px;
+  }
+
+  &__text {
+    color: $grey;
+  }
+}
+
+.locate {
+  margin: 7.5rem 0;
+  text-align: center;
+
+  // &__context {
+
+  // }
+
+  &__wrapper {
+    &:nth-of-type(2) {
+      margin: 3rem 0;
+    }
+  }
+
+  &__heading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.89px;
+    color: $navy;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    max-width: 34ch;
+    margin-inline: auto;
+  }
+
+  &__icon {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.information {
+  text-align: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7.5rem;
+  }
+
+  &__context,
+  &__context--secondary {
+    order: 2;
+    margin-top: 3.5rem;
+  }
+
+  &__heading {
+    color: $navy;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    max-width: 60ch;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.sign-up {
+  background-color: $navy;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &__context {
+    padding: 5.5rem 0;
+  }
+
+  &__heading {
+    color: $white;
+    margin-bottom: 2.5rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+}
+/**************************************
+  FOOTER
+**************************************/
+.footer {
+  background-color: $dark-grey;
+  text-align: center;
+  padding: 4rem 0 5.5rem;
+
+  .logo {
+    margin-bottom: 2.625rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 5.3125rem;
+  }
+
+  &__item {
+    color: $grey;
+    &:nth-of-type(2) {
+      margin: 1rem 0;
+    }
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: $yellow;
+    }
+  }
+
+  &__link--secondary {
+    &:hover,
+    &:focus {
+      .footer__icon {
+        fill: $light-grey;
+      }
+    }
+  }
+  
+  &__icon {
+    transition: all 400ms;
+  }
+}
+
+.twitter {
+  margin: 0 1.5rem;
+}
+
+/**************************************
+  BUTTONS
+**************************************/
+.btn {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+
+  &--hamburger {
+    height: 1rem;
+    width: 1.25rem;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      .hamburger {
+        background-color: $navy;
+      }
+    }
+  }
+
+  &--nav {
+    width: 192px;
+    text-align: center;
+    background-color: $yellow;
+    border: 3px solid $yellow;
+    padding: 0.6875rem 0;
+    position: absolute;
+    bottom: 1.5rem;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $yellow;
+    }
+  }
+
+  &--hero {
+    width: 180px;
+    background-color: $yellow;
+    border: 3px solid $yellow;
+    padding: 0.6875rem 0;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $yellow;
+    }
+  }
+
+  &--information {
+    color: $white;
+    background-color: $yellow;
+    border: 3px solid $yellow;
+    padding: 0.6875rem 2.53125rem 0.6875rem 2.78125rem;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $yellow;
+    }
+  }
+
+  &--app-store {
+    margin-right: 0.75rem;
+  }
+
+  // &--google-play {
+
+  // }
+}
+
+/**************************************
+  IMAGES
+**************************************/
+.image {
+  max-width: 100%;
+  object-fit: cover;
+
+  &--information {
+    height: 311px;
+    width: 311px;
+    border-radius: 100vw;
+    margin-inline: auto;
+  }
+}
+
+/**************************************
+  PATTERNS
+**************************************/
+// Any section with a pattern overflowing off the right side of the screen must have
+// a overflow or overflow-x of none!!
+.pattern {
+  &--primary {
+    display: none;
+  }
+
+  &--secondary {
+    display: none;
+  }
+
+  &--sign-up {
+    opacity: 10%;
+    height: 347px;
+    position: absolute;
+    bottom: -173px;
+    right: -220px;
+  }
+}
