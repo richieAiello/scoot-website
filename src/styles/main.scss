@@ -179,17 +179,38 @@ $black: #000000;
   HEADER
 **************************************/
 .hero {
-  height: 650px;
   margin-top: 4rem;
-  background-image: url(../assets/images/home-hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: $white;
   text-align: center;
+  position: relative;
+
+  &--secondary {
+    height: 160px;
+    margin-bottom: 4.5rem;
+  }
+
+  &--home {
+    height: 650px;
+    background-image: url(../assets/images/home-hero-mobile.jpg);
+  }
+
+  &--about {
+    background-image: url(../assets/images/about-hero-mobile.jpg);
+  }
 
   &__context {
     padding-top: 7.1875rem;
     max-width: 34ch;
+    position: relative;
+
+    &--secondary {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__heading {
@@ -197,6 +218,10 @@ $black: #000000;
     line-height: 2.5rem;
     letter-spacing: -1.79px;
     margin-bottom: 1.5rem;
+
+    &--secondary {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
@@ -275,9 +300,148 @@ $black: #000000;
     max-width: 60ch;
     margin-inline: auto;
     margin-bottom: 2rem;
+
+    &--about {
+      margin-bottom: 0;
+    }
   }
 }
 
+.values {
+  text-align: center;
+
+  &__heading {
+    color: $navy;
+    margin-bottom: 4rem;
+  }
+
+  &__wrapper {
+    margin-bottom: 9.0625rem;
+
+    &--secondary {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      &:nth-of-type(2) {
+        margin: 3.5rem 0;
+      }
+    }
+
+  }
+
+  &__context {
+    order: 3;
+    margin-top: 4rem;
+  }
+
+  &__sub-heading,
+  &__icon {
+    color: $navy;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -1.07px;
+  }
+
+  &__sub-heading {
+    margin-bottom: 1.6875rem;
+  }
+
+  // &__text {
+     
+  // }
+
+  &__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+    width: 96px;
+    background-color: $yellow;
+    border-radius: 100vw;
+    position: absolute;
+    top: 192px;
+  }
+}
+
+// Section facts
+.facts {
+  text-align: center;
+  margin-bottom: 7.5rem;
+
+  &__heading {
+    color: $navy;
+    margin-bottom: 3rem;
+  }
+
+  &__wrapper {
+    &:nth-of-type(1) {
+      margin-bottom: 3rem;
+    }
+
+    // &--secondary {
+
+    // }
+  }
+
+  &__sub-heading {
+    color: $navy;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -1.07px;
+    margin-bottom: 2rem;
+  }
+}
+
+.fact {
+  width: 100%;
+  background-color: #f2f5f9;
+  padding: 2rem 1.75rem 2rem 2rem;
+  text-align: left;
+  position: relative;
+
+  &:nth-of-type(2) {
+    margin: 1rem 0;
+  }
+
+  &__heading {
+    display: inline-block;
+    color: $navy;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.8px;
+    max-width: 20ch;
+    margin-right: 2rem;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 3.25rem;
+    right: 1.75rem;
+    transition: all 250ms;
+  }
+
+  &__text {
+    color: $navy;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    padding-top: 1.5rem;
+  }
+}
+
+// Swaps with class hidden when fact is clicked.
+.inline-block {
+  display: inline-block;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+// Section sign-up
 .sign-up {
   background-color: $navy;
   text-align: center;
@@ -441,6 +605,12 @@ $black: #000000;
     width: 311px;
     border-radius: 100vw;
     margin-inline: auto;
+  }
+
+  &--values {
+    width: 240px;
+    height: 240px;
+    border-radius: 100vw;
   }
 }
 

@@ -16,7 +16,259 @@
   <title>Scoot | About</title>
 </head>
 <body class="body">
-
+  <nav class="nav">
+    <div class="nav__wrapper container">
+      <img src="../assets/logo.svg" alt="Scoot company logo." class="logo">
+      <!-- Hidden on tablet and desktop  -->
+      <button type="button" aria-label="Open and close navigation menu." class="btn btn--hamburger">
+        <span class="hamburger hamburger--top"></span>
+        <span class="hamburger hamburger--bottom"></span>
+      </button>
+      <!-- Revealed with hamburger button on mobile. Displayed on tablet and desktop. -->
+      <div class="nav__menu hidden">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link link">Home</a>
+          </li>
+          <li class="nav__item"> 
+            <a href="./locations.html" class="nav__link link">Location</a>
+          </li>
+          <li class="nav__item">
+            <a href="./careers.html" class="nav__link link">Careers</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--nav link">
+          Get Scootin
+        </a>
+      </div>
+      <!-- Page overlay revealed with hamburger button on mobile. Removed for tablet and desktop. -->
+      <div class="nav__shadow hidden"></div>
+    </div>
+  </nav>
+  <header class="hero hero--about hero--secondary">
+    <div class="hero__context--secondary container">
+      <h1 class="hero__heading hero__heading--secondary heading">About</h1>
+    </div> 
+    <!-- Displayed on tablet and desktop. -->
+    <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--secondary pattern--hero-secondary">
+  </header>
+  <main class="main">
+    <section class="information container">
+      <div class="information__wrapper">
+        <div class="information__context">
+          <h2 class="information__heading main__heading heading">
+            Mobility for the digital era
+          </h2>
+          <p class="information__text information__text--about main__text">
+            Getting around should be simple (and even fun!) for everyone. We embrace technology to 
+            provide low cost, smart access to scooters at your fingertips.
+          </p>
+        </div>
+        <img 
+          src="../assets/images/digital-era.jpg" 
+          alt="A person viewing their smartphone." 
+          class="image image--information"
+        >
+        <img 
+          src="../assets/patterns/left-upward-arrow.svg" 
+          alt="" 
+          class="pattern pattern--primary pattern--about-arrow-left"
+        >
+        <!-- Hidden on mobile. --> 
+        <img 
+          src="../assets/patterns/circle.svg" 
+          alt="" 
+          class="pattern pattern--secondary pattern--about-circle"
+        >
+      </div>
+      <div class="information__wrapper">
+        <div class="information__context--secondary ">
+          <h2 class="information__heading main__heading heading">
+            Better urban living
+          </h2>
+          <p class="information__text information__text--about main__text">
+            We’re helping connect cities and bring people closer together. Our scooters are also 
+            fully-electric and we offset the minimal carbon footprint for each ride.
+          </p>
+        </div>
+        <img 
+          src="../assets/images/better-living.jpg" 
+          alt="People boarding a train in the city." 
+          class="image image--information"
+        >
+        <img 
+          src="../assets/patterns/right-arrow.svg" 
+          alt="" 
+          class="pattern pattern--primary pattern--about-arrow-right"
+        >
+        <!-- Hidden on mobile. -->
+        <img 
+          src="../assets/patterns/circle.svg" 
+          alt="" 
+          class="pattern pattern--secondary pattern--about-circle-secondary"
+        >
+      </div>
+    </section>
+    <section class="values container"> 
+      <h2 class="values__heading main__heading heading">Our values</h2>
+      <div class="values__wrapper">
+        <div class="values__wrapper--secondary">
+          <div class="values__context">
+            <h3 class="values__sub-heading heading">Our tech</h3>
+            <p class="values__text main__text">
+              We’re using cutting edge technology to drive accessible urban transportation forward. 
+              Our fully electric scooters are a joy to ride!
+            </p>
+          </div>
+          <img src="../assets/images/our-tech.jpg" alt="" class="image image--values">
+          <div class="values__icon-container">
+            <span class="values__icon heading">01</span>
+          </div>
+        </div>
+        <div class="values__wrapper--secondary">
+          <div class="values__context">
+            <h3 class="values__sub-heading heading">Our integrity</h3>
+            <p class="values__text main__text">
+              We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
+              in every city we serve.
+            </p>
+          </div>
+          <img src="../assets/images/our-integrity.jpg" alt="" class="image image--values">
+          <div class="values__icon-container">
+            <span class="values__icon heading">02</span>
+          </div>
+        </div>
+        <div class="values__wrapper--secondary">
+          <div class="values__context">
+            <h3 class="values__sub-heading heading">Our community</h3>
+            <p class="values__text main__text">
+              We support every community we serve. All workers are paid a living wage based on their 
+              location and are Scoot employees.
+            </p>
+          </div>
+          <img src="../assets/images/our-community.jpg" alt="" class="image image--values">
+          <div class="values__icon-container">
+            <span class="values__icon heading">03</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="facts container">
+      <h2 class="facts__heading main__heading heading">FAQs</h2>
+      <div class="facts__wrapper">
+        <h3 class="facts__sub-heading heading">How it works</h3>
+        <div class="facts__wrapper--secondary">
+          <button type="button" class="fact btn btn--fact" aria-label="Click to reveal the answer.">
+            <span class="fact__heading heading">
+              How do I download the app?
+            </span>
+            <img src="../assets/icons/chevron.svg" alt="" class="fact__icon">
+            <span class="fact__text hidden">
+              To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. 
+              An even simpler way to do it would be to click the relevant link at the bottom of this 
+              page and you’ll be re-directed to the correct page.
+            </span>
+          </button>
+          <button type="button" class="fact btn btn--fact" aria-label="Click to reveal the answer.">
+            <span class="fact__heading heading">
+              Can I find a nearby Scoots?
+            </span>
+            <img src="../assets/icons/chevron.svg" alt="" class="fact__icon">
+            <span class="fact__text hidden">
+              Definitely! Simply open up the app and allow us to find your location while using it. We'll 
+              show you all of the closest Scoots and some extra useful information.
+            </span>
+          </button>
+          <button type="button" class="fact btn btn--fact" aria-label="Click to reveal the answer.">
+            <span class="fact__heading heading">
+              Do I need a license to ride?
+            </span>
+            <img src="../assets/icons/chevron.svg" alt="" class="fact__icon">
+            <span class="fact__text hidden">
+              Yup! We provide information inside the app regarding local laws and the license you need to be 
+              able to ride our Scoots.
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="facts__wrapper">
+        <h3 class="facts__sub-heading heading">Safe driving</h3>
+        <div class="facts__wrapper--secondary">
+          <button type="button" class="fact btn btn--fact" aria-label="Click to reveal the answer.">
+            <span class="fact__heading heading">
+              Should I wear a helmet?
+            </span>
+            <img src="../assets/icons/chevron.svg" alt="" class="fact__icon">
+            <span class="fact__text hidden">
+              Yes, please do! All cities have different laws. But we strongly strongly strongly recommend 
+              always wearing a helmet regardless of the local laws. We like you and we want you to be as 
+              safe as possible while Scooting.
+            </span>
+          </button>
+          <button type="button" class="fact btn btn--fact" aria-label="Click to reveal the answer.">
+            <span class="fact__heading heading">
+              How about the rules & regulations?
+            </span>
+            <img src="../assets/icons/chevron.svg" alt="" class="fact__icon">
+            <span class="fact__text hidden">
+              Now is not the time to be a rule breaker. Be sure you're complying with all local laws and 
+              regulations. Also, just be a good human being. Be sure not to park your Scoot where it can 
+              block access to buildings or get in people's way.
+            </span>
+          </button>
+          <button type="button" class="fact btn btn--fact" aria-label="Click to reveal the answer.">
+            <span class="fact__heading heading">
+              What if I damage my Scoot?
+            </span>
+            <img src="../assets/icons/chevron.svg" alt="" class="fact__icon">
+            <span class="fact__text hidden">
+              Be sure to read our terms and conditions carefully. Not the most fun job we know but we make 
+              it as clear as possible. There's an option to add insurance for each trip, or you can sign 
+              up for annual insurance if you're a regular Scooter.
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="sign-up">
+      <div class="sign-up__context container">
+       <h2 class="main__heading sign-up__heading heading">
+       Sign up and Scoot off today
+       </h2>
+       <div class="sign-up__wrapper"> 
+         <a href="#" class="btn btn--app-store" aria-label="Download the Scoot app from the app store.">
+           <!-- Icon inserted via index.js. -->
+         </a>
+         <a href="#" class="btn btn--google-play" aria-label="Download the Scoot app from google play.">
+           <!-- Icon inserted via index.js. -->
+         </a>
+       </div>
+      </div>
+      <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--sign-up">
+   </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <img src="../assets/logo-white.svg" alt="Scoot company logo." class="logo">
+      <ul class="footer__list">
+       <li class="footer__item">
+         <a href="./index.html" class="footer__link link">Home</a>
+       </li>
+       <li class="footer__item">
+         <a href="./locations.html" class="footer__link link">Location</a>
+       </li>
+       <li class="footer__item">
+         <a href="./careers.html" class="footer__link link">Careers</a>
+       </li>
+      </ul>
+      <div class="footer__icons">
+        <!-- Inline svg icons inserted into links via index.js. -->
+        <a href="#" class="facebook footer__link--secondary link" aria-label="Visit the official Scoot facebook."></a>
+        <a href="#" class="twitter footer__link--secondary link" aria-label="Visit the official Scoot twitter."></a>
+        <a href="#" class="instagram footer__link--secondary link" aria-label="Visit the official Scoot instagram."></a>
+      </div>
+    </div>
+ </footer>
 </body>
 </html>
 

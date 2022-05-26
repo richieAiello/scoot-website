@@ -9,6 +9,11 @@ const hamburgerBottom = document.querySelector('.hamburger--bottom');
 const navMenu = document.querySelector('.nav__menu');
 const navShadow = document.querySelector('.nav__shadow');
 
+// Section Facts - variables.
+const factBtnsArray = [...document.querySelectorAll('.btn--fact')];
+const factTextArray = [...document.querySelectorAll('.fact__text')];
+const factIconsArray = [...document.querySelectorAll('.fact__icon')];
+
 // Inserts svgs into html on page load.
 insertSvgs();
 
@@ -67,10 +72,31 @@ const navHide = () => {
   navShadow.classList.add('fade-out');
 }
 
+factShow = (text, icon) => {
+  text.classList.replace('hidden', "inline-block");
+  icon.classList.add('rotate');
+}
+
+factHide = (text, icon) => {
+  text.classList.replace('inline-block', 'hidden');
+  icon.classList.remove('rotate');
+}
+
 /* Uses the ternary operator to determine whether to show or hide the nav overlay,
 based on the existence of class hidden in navMenu. */
 hamburgerBtn.addEventListener('click', e => {
   navMenu.classList.contains('hidden') ?
   navShow() :
   navHide();
+});
+
+factBtnsArray?.forEach(btn => {
+  btn.addEventListener("click", e => {
+    const currentText = factTextArray[factBtnsArray.indexOf(e.currentTarget)];
+    const currentIcon = factIconsArray[factBtnsArray.indexOf(e.currentTarget)];
+
+    currentText.classList.contains('hidden') ?
+    factShow(currentText, currentIcon) :
+    factHide(currentText, currentIcon);
+  });
 });
