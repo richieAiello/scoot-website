@@ -275,6 +275,10 @@ $black: #000000;
     max-width: 60ch;
     margin-inline: auto;
     margin-bottom: 2rem;
+
+    &--about {
+      margin-bottom: 0;
+    }
   }
 }
 
