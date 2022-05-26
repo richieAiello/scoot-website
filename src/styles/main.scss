@@ -179,17 +179,38 @@ $black: #000000;
   HEADER
 **************************************/
 .hero {
-  height: 650px;
   margin-top: 4rem;
-  background-image: url(../assets/images/home-hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: $white;
   text-align: center;
+  position: relative;
+
+  &--secondary {
+    height: 160px;
+    margin-bottom: 4.5rem;
+  }
+
+  &--home {
+    height: 650px;
+    background-image: url(../assets/images/home-hero-mobile.jpg);
+  }
+
+  &--about {
+    background-image: url(../assets/images/about-hero-mobile.jpg);
+  }
 
   &__context {
     padding-top: 7.1875rem;
     max-width: 34ch;
+    position: relative;
+
+    &--secondary {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__heading {
@@ -197,6 +218,10 @@ $black: #000000;
     line-height: 2.5rem;
     letter-spacing: -1.79px;
     margin-bottom: 1.5rem;
+
+    &--secondary {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
