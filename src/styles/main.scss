@@ -735,39 +735,45 @@ $black: #000000;
 // Any section with a pattern overflowing off the right side of the screen must have
 // a overflow or overflow-x of none!!
 .pattern {
+  position: absolute;
 
   &--secondary {
     display: none;
   }
 
   &--hero-arrow {
-    position: absolute;
     right: 208px;
     bottom: -150px;
   }
 
   &--information-arrow-left-1 {
-    position: absolute;
     top: 173px;
     left: 0;
   }
 
   &--information-arrow-right {
-    position: absolute;
     right: 81px;
     top: 0;
   }
 
   &--information-arrow-left-2 {
-    position: absolute;
     left: 130px;
     top: 0;
+  }
+
+  &--about-arrow-left {
+    top: 133px;
+    left: -5px;
+  }
+
+  &--about-arrow-right {
+    right: -5px;
+    top: -10px;
   }
 
   &--sign-up {
     opacity: 10%;
     height: 347px;
-    position: absolute;
     bottom: -173px;
     right: -220px;
   }
