@@ -16,7 +16,82 @@
   <title>Scoot | Locations</title>
 </head>
 <body class="body">
-
+  <nav class="nav">
+    <div class="nav__wrapper container">
+      <img src="../assets/logo.svg" alt="Scoot company logo." class="logo">
+      <!-- Hidden on tablet and desktop  -->
+      <button type="button" aria-label="Open and close navigation menu." class="btn btn--hamburger">
+        <span class="hamburger hamburger--top"></span>
+        <span class="hamburger hamburger--bottom"></span>
+      </button>
+      <!-- Revealed with hamburger button on mobile. Displayed on tablet and desktop. -->
+      <div class="nav__menu hidden">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link link">About</a>
+          </li>
+          <li class="nav__item"> 
+            <a href="./careers.html" class="nav__link link">Careers</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--nav link">
+          Get Scootin
+        </a>
+      </div>
+      <!-- Page overlay revealed with hamburger button on mobile. Removed for tablet and desktop. -->
+      <div class="nav__shadow hidden"></div>
+    </div>
+  </nav>
+  <header class="hero hero--careers hero--secondary">
+    <div class="hero__context--secondary container">
+      <h1 class="hero__heading hero__heading--secondary heading">Locations</h1>
+    </div> 
+    <!-- Displayed on tablet and desktop. -->
+    <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--secondary pattern--hero-secondary">
+  </header>
+  <main class="main">
+    <section class="sign-up">
+      <div class="sign-up__context container">
+       <h2 class="main__heading sign-up__heading heading">
+       Sign up and Scoot off today
+       </h2>
+       <div class="sign-up__wrapper"> 
+         <a href="#" class="btn btn--app-store" aria-label="Download the Scoot app from the app store.">
+           <!-- Icon inserted via index.js. -->
+         </a>
+         <a href="#" class="btn btn--google-play" aria-label="Download the Scoot app from google play.">
+           <!-- Icon inserted via index.js. -->
+         </a>
+       </div>
+      </div>
+      <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--sign-up">
+   </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <img src="../assets/logo-white.svg" alt="Scoot company logo." class="logo">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="./index.html" class="footer__link link">Home</a>
+        </li>
+        <li class="footer__item">
+          <a href="./about.html" class="footer__link link">About</a>
+        </li>
+        <li class="footer__item">
+          <a href="./careers.html" class="footer__link link">Careers</a>
+        </li>
+      </ul>
+      <div class="footer__icons">
+        <!-- Inline svg icons inserted into links via index.js. -->
+        <a href="#" class="facebook footer__link--secondary link" aria-label="Visit the official Scoot facebook."></a>
+        <a href="#" class="twitter footer__link--secondary link" aria-label="Visit the official Scoot twitter."></a>
+        <a href="#" class="instagram footer__link--secondary link" aria-label="Visit the official Scoot instagram."></a>
+      </div>
+    </div>
+ </footer>
 </body>
 </html>
 
