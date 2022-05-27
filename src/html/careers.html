@@ -16,7 +16,201 @@
   <title>Scoot | Careers</title>
 </head>
 <body class="body">
-
+  <nav class="nav">
+    <div class="nav__wrapper container">
+      <img src="../assets/logo.svg" alt="Scoot company logo." class="logo">
+      <!-- Hidden on tablet and desktop  -->
+      <button type="button" aria-label="Open and close navigation menu." class="btn btn--hamburger">
+        <span class="hamburger hamburger--top"></span>
+        <span class="hamburger hamburger--bottom"></span>
+      </button>
+      <!-- Revealed with hamburger button on mobile. Displayed on tablet and desktop. -->
+      <div class="nav__menu hidden">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link link">About</a>
+          </li>
+          <li class="nav__item"> 
+            <a href="./locations.html" class="nav__link link">Location</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--nav link">
+          Get Scootin
+        </a>
+      </div>
+      <!-- Page overlay revealed with hamburger button on mobile. Removed for tablet and desktop. -->
+      <div class="nav__shadow hidden"></div>
+    </div>
+  </nav>
+  <header class="hero hero--careers hero--secondary">
+    <div class="hero__context--secondary container">
+      <h1 class="hero__heading hero__heading--secondary heading">Careers</h1>
+    </div> 
+    <!-- Displayed on tablet and desktop. -->
+    <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--secondary pattern--hero-secondary">
+  </header>
+  <main class="main">
+    <section class="information container">
+      <div class="information__wrapper">
+        <div class="information__context">
+          <h2 class="information__heading main__heading heading">
+            Care to join our mission?
+          </h2>
+          <p class="information__text main__text">
+            We’re always looking for ambitious individuals to help us on our journey. If you’re 
+            passionate about our mission to provide clean, accessible transport to improve urban 
+            living we want to hear from you!
+          </p>
+          <a href="#" class="btn btn--information link">Say Hello</a>
+        </div>
+        <img 
+          src="../assets/images/join-us.jpg" 
+          alt="A person viewing the scoot app on their smartphone." 
+          class="image image--information"
+        >
+        <img 
+          src="../assets/patterns/left-downward-arrow.svg" 
+          alt="" 
+          class="pattern pattern--primary pattern--information-arrow-left-1"
+        >
+        <!-- Hidden on mobile. -->
+        <img 
+          src="../assets/patterns/circle.svg" 
+          alt="" 
+          class="pattern pattern--secondary pattern--information-circle"
+        >
+      </div>
+    </section>
+    <section class="values container"> 
+      <h2 class="values__heading main__heading heading">Why join us?</h2>
+      <div class="values__wrapper">
+        <div class="values__wrapper--secondary">
+          <div class="values__context">
+            <h3 class="values__sub-heading heading">Our tech</h3>
+            <p class="values__text main__text">
+              We’re using cutting edge technology to drive accessible urban transportation forward. 
+              Our fully electric scooters are a joy to ride!
+            </p>
+          </div>
+          <img src="../assets/images/our-tech.jpg" alt="" class="image image--values">
+          <div class="values__icon-container">
+            <span class="values__icon heading">01</span>
+          </div>
+        </div>
+        <div class="values__wrapper--secondary">
+          <div class="values__context">
+            <h3 class="values__sub-heading heading">Our integrity</h3>
+            <p class="values__text main__text">
+              We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
+              in every city we serve.
+            </p>
+          </div>
+          <img src="../assets/images/our-integrity.jpg" alt="" class="image image--values">
+          <div class="values__icon-container">
+            <span class="values__icon heading">02</span>
+          </div>
+        </div>
+        <div class="values__wrapper--secondary">
+          <div class="values__context">
+            <h3 class="values__sub-heading heading">Our community</h3>
+            <p class="values__text main__text">
+              We support every community we serve. All workers are paid a living wage based on their 
+              location and are Scoot employees.
+            </p>
+          </div>
+          <img src="../assets/images/our-community.jpg" alt="" class="image image--values">
+          <div class="values__icon-container">
+            <span class="values__icon heading">03</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="apply container">
+      <div class="apply__wrapper">
+        <div class="apply__context">
+          <h4 class="apply__heading heading">General Manager</h4>
+          <p class="apply__text main__text">Jakarta, Indonesia</p>
+        </div>
+        <a href="#" class="btn btn--apply link">Apply</a>
+      </div>
+      <div class="apply__wrapper">
+        <div class="apply__context">
+          <h4 class="apply__heading heading">UI/UX Designer</h4>
+          <p class="apply__text main__text">Yokohama, Japan</p>
+        </div>
+        <a href="#" class="btn btn--apply link">Apply</a>
+      </div>
+      <div class="apply__wrapper">
+        <div class="apply__context">
+          <h4 class="apply__heading heading">Blog Content Copywriter</h4>
+          <p class="apply__text main__text">New York, United States</p>
+        </div>
+        <a href="#" class="btn btn--apply link">Apply</a>
+      </div>
+      <div class="apply__wrapper">
+        <div class="apply__context">
+          <h4 class="apply__heading heading">Graphic Designer</h4>
+          <p class="apply__text main__text">New York, United States</p>
+        </div>
+        <a href="#" class="btn btn--apply link">Apply</a>
+      </div>
+      <div class="apply__wrapper">
+        <div class="apply__context">
+          <h4 class="apply__heading heading">Fleet Supervisor</h4>
+          <p class="apply__text main__text">Jakarta, Indonesia</p>
+        </div>
+        <a href="#" class="btn btn--apply link">Apply</a>
+      </div>
+      <div class="apply__wrapper">
+        <div class="apply__context">
+          <h4 class="apply__heading heading">UX Analyst</h4>
+          <p class="apply__text main__text">London, United Kingdom</p>
+        </div>
+        <a href="#" class="btn btn--apply link">Apply</a>        
+      </div>
+    </section>
+    <section class="sign-up">
+      <div class="sign-up__context container">
+       <h2 class="main__heading sign-up__heading heading">
+       Sign up and Scoot off today
+       </h2>
+       <div class="sign-up__wrapper"> 
+         <a href="#" class="btn btn--app-store" aria-label="Download the Scoot app from the app store.">
+           <!-- Icon inserted via index.js. -->
+         </a>
+         <a href="#" class="btn btn--google-play" aria-label="Download the Scoot app from google play.">
+           <!-- Icon inserted via index.js. -->
+         </a>
+       </div>
+      </div>
+      <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--sign-up">
+   </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <img src="../assets/logo-white.svg" alt="Scoot company logo." class="logo">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="./index.html" class="footer__link link">Home</a>
+        </li>
+        <li class="footer__item">
+          <a href="./about.html" class="footer__link link">About</a>
+        </li>
+        <li class="footer__item">
+          <a href="./locations.html" class="footer__link link">Location</a>
+        </li>
+      </ul>
+      <div class="footer__icons">
+        <!-- Inline svg icons inserted into links via index.js. -->
+        <a href="#" class="facebook footer__link--secondary link" aria-label="Visit the official Scoot facebook."></a>
+        <a href="#" class="twitter footer__link--secondary link" aria-label="Visit the official Scoot twitter."></a>
+        <a href="#" class="instagram footer__link--secondary link" aria-label="Visit the official Scoot instagram."></a>
+      </div>
+    </div>
+ </footer>
 </body>
 </html>
 
