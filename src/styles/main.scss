@@ -481,6 +481,57 @@ $black: #000000;
   // }
 }
 
+// Section locations
+.locations {
+  text-align: center;
+  margin-bottom: 4.5rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4.5rem;
+  }
+
+  // &__context {
+
+  // }
+
+  &__heading {
+    max-width: 14ch;
+    margin-inline: auto;
+    color: $navy;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem ;
+    max-width: 54ch;
+    margin-inline: auto;
+  }
+}
+
+.marker {
+  width: min(100%, 311px);
+  padding: 1.375rem 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -1.07px;
+  font-weight: 700;
+  background-color: rgba($yellow, 15%);
+  color: $navy;
+  margin-bottom: 1rem;
+
+  &--yokohama {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    display: none;
+  }
+}
+
 // Section sign-up
 .sign-up {
   background-color: $navy;
@@ -579,44 +630,45 @@ $black: #000000;
     }
   }
 
-  &--nav {
-    width: 192px;
-    text-align: center;
-    background-color: $yellow;
-    border: 3px solid $yellow;
-    padding: 0.6875rem 0;
-    position: absolute;
-    bottom: 1.5rem;
-
-    &:hover,
-    &:focus {
-      background-color: $white;
-      color: $yellow;
-    }
-  }
-
-  &--hero {
-    width: 180px;
-    background-color: $yellow;
-    border: 3px solid $yellow;
-    padding: 0.6875rem 0;
-
-    &:hover,
-    &:focus {
-      background-color: transparent;
-      color: $yellow;
-    }
-  }
-
-  &--information {
+  &--nav,
+  &--hero,
+  &--information,
+  &--apply,
+  &--locations {
     color: $white;
     background-color: $yellow;
     border: 3px solid $yellow;
-    padding: 0.6875rem 2.53125rem 0.6875rem 2.78125rem;
+    padding: 0.6875rem 0;
+    text-align: center;
+  }
 
+  &--nav,
+  &--information,
+  &--apply,
+  &--locations {
     &:hover,
     &:focus {
       background-color: $white;
+      color: $yellow;
+    }
+  }
+
+  &--hero,
+  &--information,
+  &--locations {
+    width: min(100%, 180px);
+  }
+
+  &--nav {
+    width: min(100%, 192px);
+    position: absolute;
+    bottom: 1.5rem;
+  }
+
+  &--hero {
+    &:hover,
+    &:focus {
+      background-color: transparent;
       color: $yellow;
     }
   }
@@ -627,18 +679,7 @@ $black: #000000;
   }
 
   &--apply {
-    background-color: $yellow;
-    color: $white;
-    border: 3px solid $yellow;
     width: min(100%, 241px);
-    padding: 0.6875rem 0;
-    text-align: center;
-
-    &:hover,
-    &:focus {
-      background-color: $white;
-      color: $yellow;
-    }
   }
 
   @media (min-width: 425px) {
@@ -657,6 +698,11 @@ $black: #000000;
   max-width: 100%;
   object-fit: cover;
 
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
   &--information {
     height: 311px;
     width: 311px;
@@ -668,6 +714,10 @@ $black: #000000;
     width: 240px;
     height: 240px;
     border-radius: 100vw;
+  }
+
+  &--locations {
+    margin-bottom: 2.5rem;
   }
 }
 
