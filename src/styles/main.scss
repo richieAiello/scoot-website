@@ -185,6 +185,7 @@ $black: #000000;
   color: $white;
   text-align: center;
   position: relative;
+  overflow: hidden;
 
   &--secondary {
     height: 160px;
@@ -283,11 +284,18 @@ $black: #000000;
 
 .information {
   text-align: center;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     margin-bottom: 7.5rem;
+
+    &--secondary {
+      max-width: max-content;
+      margin-inline: auto;
+      position: relative;
+    }
   }
 
   &__context,
@@ -727,12 +735,33 @@ $black: #000000;
 // Any section with a pattern overflowing off the right side of the screen must have
 // a overflow or overflow-x of none!!
 .pattern {
-  &--primary {
-    display: none;
-  }
 
   &--secondary {
     display: none;
+  }
+
+  &--hero-arrow {
+    position: absolute;
+    right: 208px;
+    bottom: -150px;
+  }
+
+  &--information-arrow-left-1 {
+    position: absolute;
+    top: 173px;
+    left: 0;
+  }
+
+  &--information-arrow-right {
+    position: absolute;
+    right: 81px;
+    top: 0;
+  }
+
+  &--information-arrow-left-2 {
+    position: absolute;
+    left: 130px;
+    top: 0;
   }
 
   &--sign-up {
