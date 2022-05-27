@@ -200,6 +200,11 @@ $black: #000000;
     background-image: url(../assets/images/about-hero-mobile.jpg);
   }
 
+  &--careers,
+  &--locations {
+    background-image: url(../assets/images/careers-location-hero-mobile.jpg);
+  }
+
   &__context {
     padding-top: 7.1875rem;
     max-width: 34ch;
