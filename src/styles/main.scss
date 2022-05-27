@@ -446,6 +446,41 @@ $black: #000000;
   transform: rotate(-180deg);
 }
 
+// Section apply
+.apply {
+  margin-bottom: 7.5rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $snow;
+    padding: 2.25rem 2rem 2rem 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__context {
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    color: $navy;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.8px;
+    margin-bottom: 0.25rem;
+  }
+
+  // &__text {
+
+  // }
+}
+
 // Section sign-up
 .sign-up {
   background-color: $navy;
@@ -587,11 +622,28 @@ $black: #000000;
   }
 
   &--app-store {
+    display: block;
     margin-bottom: 1rem;
   }
 
-  @media (min-width: 410px) {
+  &--apply {
+    background-color: $yellow;
+    color: $white;
+    border: 3px solid $yellow;
+    width: min(100%, 241px);
+    padding: 0.6875rem 0;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $yellow;
+    }
+  }
+
+  @media (min-width: 425px) {
     &--app-store {
+      display: inline-block;
       margin-bottom: 0;
       margin-right: 0.75rem;
     }
