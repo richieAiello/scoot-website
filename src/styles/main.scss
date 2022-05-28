@@ -447,12 +447,32 @@ $black: #000000;
   }
 
   &__text {
-    max-width: 60ch;
-    margin-inline: auto;
     margin-bottom: 2rem;
 
-    &--about {
+    &--secondary {
       margin-bottom: 0;
+    }
+  }
+
+  @media(min-width: 768px) {
+
+    &__wrapper--home:last-child {
+      margin-bottom: 6.5rem;
+    }
+
+    &__context,
+    &__context--secondary {
+      margin-top: 4rem;
+    }
+
+    &__heading {
+      max-width: 15ch;
+      margin-inline: auto;
+      margin-bottom: 2.5rem;
+    }
+
+    &__text {
+      margin-bottom: 2.5rem;
     }
   }
 }
@@ -932,6 +952,31 @@ $black: #000000;
   &--locations {
     margin-bottom: 2.5rem;
   }
+
+  @media(min-width: 768px) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: initial;
+    }
+
+    &--information {
+      height: 445px;
+      width: 445px;
+    }
+
+    &--values {
+      width: 240px;
+      height: 240px;
+      border-radius: 100vw;
+    }
+
+    &--locations {
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 
 /**************************************
@@ -1013,6 +1058,48 @@ $black: #000000;
       background-color: $light-grey;
       bottom: 100px;
       left: 40.5px;
+    }
+
+    &--information-circle {
+      left: 509px;
+      z-index: -1;
+    }
+
+    &--information-circle-secondary {
+      right: 509px;
+      z-index: -1;
+    }
+
+    &--information-arrow-left-1 {
+      top: unset;
+      bottom: 0;
+      left: -126px;
+    }
+  
+    &--information-arrow-right {
+      right: 260px;
+      top: 0;
+    }
+  
+    &--information-arrow-left-2 {
+      left: 255px;
+      top: 80px;
+    }
+  
+    &--about-arrow-left {
+      top: unset;
+      bottom: 40px;
+      left: -126px;
+    }
+  
+    &--about-arrow-right {
+      right: 260px;
+      top: 0;
+    }
+  
+    &--careers-arrow {
+      left: -126px;
+      bottom: 0;
     }
 
     &--sign-up {
