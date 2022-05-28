@@ -25,7 +25,6 @@ $black: #000000;
 /**************************************
   BASE STYLES
 **************************************/
-// font-family: 'Space Mono', monospace;
 .body {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -230,7 +229,6 @@ $black: #000000;
   background-repeat: no-repeat;
   color: $white;
   text-align: center;
-  position: relative;
   overflow: hidden;
 
   &--secondary {
@@ -241,6 +239,7 @@ $black: #000000;
   &--home {
     height: 650px;
     background-image: url(../assets/images/home-hero-mobile.jpg);
+    position: relative;
   }
 
   &--about {
@@ -254,8 +253,9 @@ $black: #000000;
 
   &__context {
     padding-top: 7.1875rem;
-    max-width: 34ch;
+    max-width: 311px;
     position: relative;
+    margin-inline: auto;
 
     &--secondary {
       height: 100%;
@@ -269,15 +269,64 @@ $black: #000000;
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: -1.79px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.375rem;
 
     &--secondary {
       margin-bottom: 0;
     }
-  }
+  } 
 
   &__text {
     margin-bottom: 2.125rem;
+  }
+
+  @media(min-width: 768px) {
+    margin-top: 6rem;
+
+    &--secondary {
+      height: 160px;
+      margin-bottom: 4.5rem;
+    }
+
+    &--home {
+      background-image: url(../assets/images/home-hero-tablet.jpg);
+    }
+
+    &--about {
+      background-image: url(../assets/images/about-hero-mobile.jpg);
+    }
+
+    &--careers,
+    &--locations {
+      background-image: url(../assets/images/careers-location-hero-mobile.jpg);
+    }
+
+    &__context {
+      padding-top: 8.5625rem;
+      max-width: 573px;
+
+      &--secondary {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__heading {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+      letter-spacing: -2.5px;
+      margin-bottom: 1.5rem;
+
+      &--secondary {
+        margin-bottom: 0;
+      }
+    }
+
+    &__text {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -859,7 +908,8 @@ $black: #000000;
 .pattern {
   position: absolute;
 
-  &--secondary {
+  &--secondary,
+  &--hero-line {
     display: none;
   }
 
@@ -904,6 +954,20 @@ $black: #000000;
   }
 
   @media(min-width: 768px) {
+    &--secondary {
+      display: initial;
+    }
+
+    &--hero-arrow {
+      right: 348px;
+      bottom: -180px;
+    }
+
+    &--hero-circles {
+      bottom: -172px;
+      right: -129px;
+    }
+
     &--sign-up {
       right: -163px;
     }
