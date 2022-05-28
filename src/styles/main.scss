@@ -596,8 +596,8 @@ $black: #000000;
 
   &__icon {
     position: absolute;
-    top: 3.25rem;
-    right: 1.75rem;
+    top: 52px;
+    right: 28px;
     transition: all 250ms;
   }
 
@@ -618,6 +618,47 @@ $black: #000000;
 
 .rotate {
   transform: rotate(-180deg);
+}
+
+@media (min-width: 768px) {
+  .facts {
+    &__heading {
+      margin-bottom: 4rem;
+    }
+  
+    &__wrapper {
+      &:nth-of-type(1) {
+        margin-bottom: 4rem;
+      }
+    }
+  
+    &__sub-heading {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      letter-spacing: -1.79px;
+    }
+  }
+  
+  .fact {
+    padding: 2rem 2rem 2rem 2.5rem;
+  
+    &:nth-of-type(2) {
+      margin: 1.5rem 0;
+    }
+  
+    &__heading {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      letter-spacing: -1.07px;
+      max-width: unset;
+    }
+  
+    &__icon {
+      position: absolute;
+      top: 42px;
+      right: 32px;
+    }
+  }
 }
 
 // Section apply
