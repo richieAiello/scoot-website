@@ -294,6 +294,14 @@ $black: #000000;
   &__text {
     color: $grey;
   }
+
+  @media(min-width: 768px) {
+    &__heading {
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: -2.14px;
+    }
+  }
 }
 
 .locate {
@@ -600,11 +608,28 @@ $black: #000000;
   &__heading {
     color: $white;
     margin-bottom: 2.5rem;
+    max-width: 18ch;
+    margin-inline: auto;
   }
 
   &__wrapper {
     position: relative;
     z-index: 1;
+  }
+
+  @media(min-width: 768px) {
+    background-color: $navy;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &__context {
+      padding: 3.875rem 0;
+    }
+
+    &__heading {
+      max-width: 15ch;
+    }
   }
 }
 /**************************************
@@ -834,10 +859,14 @@ $black: #000000;
   }
 
   &--sign-up {
-    opacity: 10%;
-    height: 347px;
-    bottom: -173px;
-    right: -220px;
+    bottom: 0;
+    right: -171px;
+  }
+
+  @media(min-width: 768px) {
+    &--sign-up {
+      right: -163px;
+    }
   }
 }
 
