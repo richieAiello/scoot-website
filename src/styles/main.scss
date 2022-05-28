@@ -691,9 +691,25 @@ $black: #000000;
     margin-bottom: 0.25rem;
   }
 
-  // &__text {
+  @media(min-width: 768px) {
+    &__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2.125rem 3rem 2.0625rem 3rem;
+      text-align: left;
+    }
 
-  // }
+    &__context {
+      margin-bottom: 1rem;
+    }
+
+    &__heading {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      letter-spacing: -1.07px;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 // Section locations
@@ -970,6 +986,10 @@ $black: #000000;
     &--nav {
       width: min(100%, 180px);
       position: unset;
+    }
+
+    &--apply {
+      width: min(100%, 180px);
     }
   }
 }
