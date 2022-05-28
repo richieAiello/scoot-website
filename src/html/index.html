@@ -46,7 +46,7 @@
     </div>
   </nav>
   <header class="hero hero--home">
-    <div class="hero__context container">
+    <div class="hero__context container--secondary">
       <h1 class="hero__heading heading">
         <span class="block">Scooter sharing</span>
         made simple
@@ -61,48 +61,55 @@
       </a>
       <img src="../assets/patterns/right-arrow.svg" alt="" class="pattern pattern--primary pattern--hero-arrow">
       <!-- Displayed on tablet and desktop. --> 
-      <img src="../assets/patterns/line.svg" alt="" class="pattern pattern--secondary pattern--hero-line">
-    </div> 
-    <!-- Displayed on tablet and desktop. -->
-    <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--secondary pattern--hero-circles">
+      <img src="../assets/patterns/line.svg" alt="" class="pattern pattern--hero-line">
+      <!-- Displayed on tablet and desktop. -->
+      <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--secondary pattern--hero-circles">
+    </div>
   </header>
   <main class="main">
     <section class="locate">
-       <!-- Accessible to screen readers, but invisible to the eye. -->
-       <h2 class="invisible">
-         Find yourself a scooter.
-       </h2>
-
-       <div class="locate__context container ">
-         <div class="locate__wrapper">
+      <!-- Accessible to screen readers, but invisible to the eye. -->
+      <h2 class="invisible">
+        Find yourself a scooter.
+      </h2>
+      <div class="locate__wrapper container--secondary">
+        <div class="locate__wrapper--secondary">
           <img src="../assets/icons/locate.svg" alt="" class="locate__icon">
-           <h3 class="locate__heading heading">Locate with app</h3>
-           <p class="locate__text main__text">
-            Use the app to find the nearest scooter to you. We are continuously placing scooters 
-            in the areas with most demand, so one should never be too far away.
-           </p>
-         </div>
-         <div class="locate__wrapper">
-           <img src="../assets/icons/scooter.svg" alt="" class="locate__icon">
-           <h3 class="locate__heading heading">Pick your scooter</h3>
-           <p class="locate__text main__text">
-            We show the most important info for the scooters closest to you. So you know how much 
-            charge they have left and can see roughly how much it will cost.
-           </p>
-         </div>
-         <div class="locate__wrapper">
-           <img src="../assets/icons/ride.svg" alt="" class="locate__icon">
-           <h3 class="locate__heading heading">Enjoy the ride</h3>
-           <p class="locate__text main__text">
-            Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, 
-            and you’re off! Always lock bikes away from walkways and accessibility ramps.
-           </p>
-         </div>
-       </div>
+          <div class="locate__context">
+            <h3 class="locate__heading heading">Locate with app</h3>
+            <p class="locate__text main__text">
+              Use the app to find the nearest scooter to you. We are continuously placing scooters
+              in the areas with most demand, so one should never be too far away.
+            </p>
+          </div>
+        </div> 
+        <div class="locate__wrapper--secondary">
+          <img src="../assets/icons/scooter.svg" alt="" class="locate__icon">
+          <div class="locate__context">
+            <h3 class="locate__heading heading">Pick your scooter</h3>
+            <p class="locate__text main__text">
+              We show the most important info for the scooters closest to you. So you know how much
+              charge they have left and can see roughly how much it will cost.
+            </p>
+          </div>
+        </div>
+        <div class="locate__wrapper--secondary">
+          <img src="../assets/icons/ride.svg" alt="" class="locate__icon">
+          <div class="locate__context">
+            <h3 class="locate__heading heading">Enjoy the ride</h3>
+            <p class="locate__text main__text">
+              Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet,
+              and you’re off! Always lock bikes away from walkways and accessibility ramps.
+            </p>
+          </div>
+        </div>
+        <!-- Displayed on tablet and desktop. -->
+        <div class="pattern pattern--secondary pattern--locate"></div>
+      </div>
     </section>
     <section class="information">
-      <div class="container">
-        <div class="information__wrapper">
+      <div class="container--secondary">
+        <div class="information__wrapper information__wrapper--home">
           <div class="information__context">
             <h2 class="information__heading main__heading heading">
               Easy to use riding telemetry
@@ -125,15 +132,15 @@
               alt=""
               class="pattern pattern--primary pattern--information-arrow-left-1"
             >
+            <!-- Hidden on mobile. -->
+            <img
+              src="../assets/patterns/circle.svg"
+              alt=""
+              class="pattern pattern--secondary pattern--information-circle"
+            >
           </div>
-          <!-- Hidden on mobile. -->
-          <img
-            src="../assets/patterns/circle.svg"
-            alt=""
-            class="pattern pattern--secondary pattern--information-circle"
-          >
         </div>
-        <div class="information__wrapper">
+        <div class="information__wrapper information__wrapper--home">
           <div class="information__context--secondary ">
             <h2 class="information__heading main__heading heading">
               Coming to a city near you
@@ -156,15 +163,15 @@
               alt=""
               class="pattern pattern--primary pattern--information-arrow-right"
             >
+            <!-- Hidden on mobile. -->
+            <img
+              src="../assets/patterns/circle.svg"
+              alt=""
+              class="pattern pattern--secondary pattern--information-circle-secondary"
+            >
           </div>
-          <!-- Hidden on mobile. -->
-          <img
-            src="../assets/patterns/circle.svg"
-            alt=""
-            class="pattern pattern--secondary pattern--information-circle-secondary"
-          >
         </div>
-        <div class="information__wrapper">
+        <div class="information__wrapper information__wrapper--home">
           <div class="information__context">
             <h2 class="information__heading main__heading heading">
               Zero hassle payments
@@ -187,13 +194,13 @@
               alt=""
               class="pattern pattern--primary pattern--information-arrow-left-2"
             >
+            <!-- Hidden on mobile. -->
+            <img
+              src="../assets/patterns/circle.svg"
+              alt=""
+              class="pattern pattern--secondary pattern--information-circle"
+            >
           </div>
-          <!-- Hidden on mobile. -->
-          <img
-            src="../assets/patterns/circle.svg"
-            alt=""
-            class="pattern pattern--secondary pattern--information-circle"
-          >
         </div>
       </div>
     </section>
@@ -211,13 +218,13 @@
           </a>
         </div>
        </div>
-       <img src="../assets/patterns/white-circles.svg" alt="" class="pattern pattern--sign-up">
+       <img src="../assets/patterns/semi-circles.svg" alt="" class="pattern pattern--sign-up">
     </section>
   </main>
   <footer class="footer">
-     <div class="footer__wrapper container">
-       <img src="../assets/logo-white.svg" alt="Scoot company logo." class="logo">
-       <ul class="footer__list">
+    <div class="footer__wrapper container">
+      <img src="../assets/logo-white.svg" alt="Scoot company logo." class="logo">
+      <ul class="footer__list">
         <li class="footer__item">
           <a href="./about.html" class="footer__link link">About</a>
         </li>
@@ -227,14 +234,14 @@
         <li class="footer__item">
           <a href="./careers.html" class="footer__link link">Careers</a>
         </li>
-       </ul>
-       <div class="footer__icons">
-         <!-- Inline svg icons inserted into links via index.js. -->
-         <a href="#" class="facebook footer__link--secondary link" aria-label="Visit the official Scoot facebook."></a>
-         <a href="#" class="twitter footer__link--secondary link" aria-label="Visit the official Scoot twitter."></a>
-         <a href="#" class="instagram footer__link--secondary link" aria-label="Visit the official Scoot instagram."></a>
-       </div>
-     </div>
+      </ul>
+      <div class="footer__icons">
+        <!-- Inline svg icons inserted into links via index.js. -->
+        <a href="#" class="facebook footer__link--secondary link" aria-label="Visit the official Scoot facebook."></a>
+        <a href="#" class="twitter footer__link--secondary link" aria-label="Visit the official Scoot twitter."></a>
+        <a href="#" class="instagram footer__link--secondary link" aria-label="Visit the official Scoot instagram."></a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
