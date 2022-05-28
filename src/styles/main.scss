@@ -37,6 +37,10 @@ $black: #000000;
 .container {
   width: calc(100% - 4rem);
   margin-inline: auto;
+
+  @media(min-width: 768px) {
+    width: min(100% - 6.125rem, 1110px);
+  }
 }
 
 .heading {
@@ -139,6 +143,48 @@ $black: #000000;
     &:hover,
     &:focus {
       color: $yellow;
+    }
+  }
+
+  @media(min-width: 768px) {
+    height: 6rem;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 166px 1fr;
+    }
+
+    .logo {
+      position: unset;
+      margin-inline: unset;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: initial;
+      position: unset;
+      width: 100%;
+      padding: 0;
+      background-color: $white;
+      color: $grey;
+    }
+
+    &__shadow {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      font-size: inherit;
+
+      &:nth-of-type(2) {
+        margin: 0 2rem;
+      }
     }
   }
 }
@@ -695,6 +741,17 @@ $black: #000000;
       display: inline-block;
       margin-bottom: 0;
       margin-right: 0.75rem;
+    }
+  }
+
+  @media(min-width: 768px) {
+    &--hamburger {
+      display: none;
+    }
+
+    &--nav {
+      width: min(100%, 180px);
+      position: unset;
     }
   }
 }
