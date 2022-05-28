@@ -262,6 +262,7 @@ $black: #000000;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
   }
 
@@ -284,8 +285,8 @@ $black: #000000;
     margin-top: 6rem;
 
     &--secondary {
-      height: 160px;
-      margin-bottom: 4.5rem;
+      height: 200px;
+      margin-bottom: 9rem;
     }
 
     &--home {
@@ -293,12 +294,12 @@ $black: #000000;
     }
 
     &--about {
-      background-image: url(../assets/images/about-hero-mobile.jpg);
+      background-image: url(../assets/images/about-hero-tablet.jpg);
     }
 
     &--careers,
     &--locations {
-      background-image: url(../assets/images/careers-location-hero-mobile.jpg);
+      background-image: url(../assets/images/careers-locations-hero-tablet.jpg);
     }
 
     &__context {
@@ -306,10 +307,9 @@ $black: #000000;
       max-width: 573px;
 
       &--secondary {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        max-width: 573px;
+        margin-inline: auto;
+        justify-content: flex-start;
       }
     }
 
@@ -966,6 +966,10 @@ $black: #000000;
     &--hero-circles {
       bottom: -172px;
       right: -129px;
+    }
+
+    &--hero-secondary {
+      left: 468px;
     }
 
     &--sign-up {
