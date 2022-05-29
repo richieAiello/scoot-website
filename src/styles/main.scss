@@ -343,8 +343,7 @@ $black: #000000;
     text-align: left;
 
     &--secondary {
-      height: 200px;
-      margin-bottom: 9rem;
+      margin-bottom: 7.5rem;
     }
 
     &--home {
@@ -568,7 +567,7 @@ $black: #000000;
 
     &__context,
     &__context--secondary {
-      margin-top: 4.125rem;
+      margin-block: auto;
       max-width: 445px;
     }
 
@@ -971,6 +970,25 @@ $black: #000000;
       max-width: 15ch;
     }
   }
+
+  @media(min-width: 1440px) {
+    background-color: $navy;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+
+    &__context {
+      padding: 6.375rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__heading {
+      margin-inline: unset;
+      margin-bottom: 0;
+    }
+  }
 }
 /**************************************
   FOOTER
@@ -1167,6 +1185,10 @@ $black: #000000;
   @media(min-width: 1440px) {
     &--hero {
       margin-left: 5.9375rem;
+    }
+
+    &--app-store {
+      margin-right: 1.125rem;
     }
   }
 }
