@@ -545,6 +545,41 @@ $black: #000000;
       margin-bottom: 2.5rem;
     }
   }
+
+  @media(min-width: 1440px) {
+    text-align: left;
+
+    &__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &--secondary {
+        margin-inline: unset;
+      }
+    }
+
+    &__wrapper--home {
+      margin-bottom: 10rem;
+    }
+
+    &__wrapper--home:last-child {
+      margin-bottom: 12.5rem;
+    }
+
+    &__context,
+    &__context--secondary {
+      margin-top: 4.125rem;
+      max-width: 445px;
+    }
+
+    &__context {
+      order: unset;
+    }
+
+    &__heading {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 .values {
