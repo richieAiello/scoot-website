@@ -371,6 +371,10 @@ $black: #000000;
     &__heading {
       margin-bottom: 2.5rem;
       max-width: 500px;
+
+      &--secondary {
+        margin-bottom: 0;
+      }
     }
 
     &__text {
@@ -1314,7 +1318,7 @@ $black: #000000;
     }
 
     &--hero-secondary {
-      left: 468px;
+      left: 1072px;
     }
 
     &--locate {
