@@ -823,7 +823,7 @@ $black: #000000;
     }
 
     &__context {
-      margin-bottom: 1rem;
+      margin-bottom: 0;
     }
 
     &__heading {
@@ -831,6 +831,14 @@ $black: #000000;
       line-height: 1.75rem;
       letter-spacing: -1.07px;
       margin-bottom: 0.5rem;
+    }
+  }
+
+  @media(min-width: 1440px) {
+    margin-bottom: 10rem;
+
+    &__wrapper {
+      padding: 2rem 4rem 2.1875rem 2.5rem;
     }
   }
 }
