@@ -641,9 +641,28 @@ $black: #000000;
     &__wrapper {
       margin-bottom: 7.5rem;
     }
+
+    &__context {
+      margin-top: 5.4375rem;
+    }
   
     &__text {
        max-width: 54ch;
+    }
+  }
+
+  @media(min-width: 1440px) {
+    &__heading {
+      margin-bottom: 6.4375rem;
+    }
+  
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      &--secondary:nth-of-type(2) {
+        margin: 0 1.875rem;
+      } 
     }
   }
 }
