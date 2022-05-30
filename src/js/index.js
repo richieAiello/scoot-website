@@ -72,11 +72,13 @@ const navHide = () => {
   navShadow.classList.add('fade-out');
 }
 
+// If the text is concealed, show the text and then rotate the fact icon.
 const factShow = (text, icon) => {
   text.classList.replace('hidden', "inline-block");
   icon.classList.add('rotate');
 }
 
+// If the text is shown, hide the text and reset the fact icon. 
 const factHide = (text, icon) => {
   text.classList.replace('inline-block', 'hidden');
   icon.classList.remove('rotate');
@@ -90,6 +92,9 @@ hamburgerBtn.addEventListener('click', e => {
   navHide();
 });
 
+/* Uses the ternary operator to determine whether to show or hide the current fact's text,
+as well as rotate or reset the current fact's icon, based on the existence of class hidden 
+in the current fact's text. */
 factBtnsArray?.forEach(btn => {
   btn.addEventListener("click", e => {
     const currentText = factTextArray[factBtnsArray.indexOf(e.currentTarget)];
