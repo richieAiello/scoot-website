@@ -72,12 +72,12 @@ const navHide = () => {
   navShadow.classList.add('fade-out');
 }
 
-factShow = (text, icon) => {
+const factShow = (text, icon) => {
   text.classList.replace('hidden', "inline-block");
   icon.classList.add('rotate');
 }
 
-factHide = (text, icon) => {
+const factHide = (text, icon) => {
   text.classList.replace('inline-block', 'hidden');
   icon.classList.remove('rotate');
 }
