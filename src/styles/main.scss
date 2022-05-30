@@ -681,10 +681,6 @@ $black: #000000;
     &:nth-of-type(1) {
       margin-bottom: 3rem;
     }
-
-    // &--secondary {
-
-    // }
   }
 
   &__sub-heading {
@@ -879,10 +875,6 @@ $black: #000000;
     margin-bottom: 4.5rem;
   }
 
-  // &__context {
-
-  // }
-
   &__heading {
     max-width: 14ch;
     margin-inline: auto;
@@ -980,6 +972,70 @@ $black: #000000;
       background-color: $yellow;
       margin-inline: auto;
       margin-top: 0.25rem;
+    }
+  } 
+}
+
+@media(min-width: 1440px) {
+  .locations {
+    &__wrapper {
+      height: 543px;
+      margin-bottom: 7.5rem;
+    }
+
+    &__context {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__heading {
+      max-width: 302px;
+      margin-inline: unset;
+      margin-bottom: 0;
+    }
+  
+    &__text {
+      margin-bottom: 0;
+      margin-inline: unset;
+      max-width: 445px;
+    }
+  }
+  
+  .marker {
+    width: 189px;
+    height: 72px;
+    padding-top: 1.375rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -1.07px;
+
+    &--new-york {
+      top: 71.44px;
+      left: 147px;
+    }
+
+    &--london {
+      top: 18px;
+      left: 393px;
+    }
+
+    &--jakarta {
+      top: 251px;
+      right: 142px;
+    }
+
+    &--yokohama {
+      top: 78px;
+      right: 65px;
+    }
+  
+    &__icon {
+      width: 32px;
+      height: 16px;
+      margin-top: 1.35rem;
     }
   } 
 }
@@ -1294,7 +1350,17 @@ $black: #000000;
     }
 
     &--locations {
-      margin-bottom: 2.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  @media(min-width: 1440px) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: initial;
     }
   }
 }
