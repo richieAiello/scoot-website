@@ -13,7 +13,6 @@ This is a solution to the [Scoot website challenge on Frontend Mentor](https://w
 ## Links
 
 - [Live URL](https://main--scoot-website-richaiello.netlify.app/)
-- [Frontend Mentor Solution URL](https://your-solution-url.com)
 
 ## My process
 
