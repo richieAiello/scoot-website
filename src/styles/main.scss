@@ -1249,7 +1249,6 @@ $black: #000000;
 
   &--nav,
   &--information,
-  &--apply,
   &--locations {
     &:hover,
     &:focus {
@@ -1270,7 +1269,8 @@ $black: #000000;
     bottom: 1.5rem;
   }
 
-  &--hero {
+  &--hero,
+  &--apply {
     &:hover,
     &:focus {
       background-color: transparent;
